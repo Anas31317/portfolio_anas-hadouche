@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio d'Anas Hadouche — Étudiant ingénieur ICAM Toulouse, spécialisé en systèmes industriels, électronique embarquée et développement web.">
+  <title>Anas Hadouche — Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAV
+══════════════════════════════════════════ -->
+<nav>
+  <a href="index.html" class="nav-logo">ANAS HADOUCHE<em>.</em></a>
+  <ul class="nav-links">
+    <li><a href="#about"    data-fr="À propos"     data-en="About">À propos</a></li>
+    <li><a href="projects.html" data-fr="Projets"  data-en="Projects">Projets</a></li>
+    <li><a href="#skills"   data-fr="Compétences"  data-en="Skills">Compétences</a></li>
+    <li><a href="#parcours" data-fr="Parcours"      data-en="Background">Parcours</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="nav-lang">
+      <button class="active" onclick="setLang('fr')">FR</button>
+      <button onclick="setLang('en')">EN</button>
+    </div>
+    <a href="#contact" class="nav-cta" data-fr="Contact" data-en="Contact">Contact</a>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<div class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow" data-fr="Étudiant ingénieur · 4ème année · ICAM Toulouse" data-en="4th-year Engineering Student · ICAM Toulouse">
+      Étudiant ingénieur · 4ème année · ICAM Toulouse
+    </div>
+    <div class="hero-name">
+      ANAS HADOUCHE
+      <span class="accent" data-fr="INGÉNIEUR" data-en="ENGINEER">INGÉNIEUR</span>
+    </div>
+    <p class="hero-desc" data-fr="Étudiant en cycle ingénieur Bac+5, passionné par l'électronique, l'informatique et la mécanique. Je conçois des solutions industrielles concrètes, de l'embarqué au web, en passant par le terrain." data-en="5th-year engineering student, passionate about electronics, IT and mechanical engineering. I design concrete industrial solutions — from embedded systems to web applications and hands-on fieldwork.">
+      Étudiant en cycle ingénieur Bac+5, passionné par l'électronique, l'informatique et la mécanique. Je conçois des solutions industrielles concrètes, de l'embarqué au web, en passant par le terrain.
+    </p>
+    <div class="hero-trail">
+      <strong>Toulouse</strong>
+      <span class="arrow">→</span>
+      <strong>Meknès</strong>
+      <span class="arrow">→</span>
+      <strong>Kochi, Inde</strong>
+    </div>
+    <div class="hero-btns">
+      <a href="projects.html" class="btn-primary" data-fr="Voir mes projets" data-en="See my projects">Voir mes projets</a>
+      <a href="assets/pdf/cv_anas_hadouche.pdf" download class="btn-secondary" data-fr="Télécharger le CV" data-en="Download CV">Télécharger le CV</a>
+    </div>
+  </div>
+
+  <div class="hero-panel">
+    <div class="panel-label" data-fr="En un coup d'œil" data-en="At a glance">En un coup d'œil</div>
+    <div class="panel-stats">
+      <div class="pstat">
+        <div class="pstat-val">Bac<span>+5</span></div>
+        <div class="pstat-lab">ICAM Toulouse</div>
+      </div>
+      <div class="pstat">
+        <div class="pstat-val">3<span>+</span></div>
+        <div class="pstat-lab" data-fr="Expériences" data-en="Experiences">Expériences</div>
+      </div>
+      <div class="pstat">
+        <div class="pstat-val">3</div>
+        <div class="pstat-lab" data-fr="Projets clés" data-en="Key projects">Projets clés</div>
+      </div>
+      <div class="pstat">
+        <div class="pstat-val"><span>IN</span></div>
+        <div class="pstat-lab" data-fr="Échange · Kochi" data-en="Exchange · Kochi">Échange · Kochi</div>
+      </div>
+    </div>
+    <div class="panel-divider"></div>
+    <div class="panel-label" data-fr="Domaines" data-en="Domains">Domaines</div>
+    <div class="panel-tags">
+      <span class="tag tag-v" data-fr="Développement web" data-en="Web Development">Développement web</span>
+      <span class="tag tag-b" data-fr="Électronique" data-en="Electronics">Électronique</span>
+      <span class="tag tag-a" data-fr="Systèmes électriques" data-en="Electrical Systems">Systèmes électriques</span>
+      <span class="tag tag-rose" data-fr="Mécanique" data-en="Mechanical">Mécanique</span>
+      <span class="tag tag-rose" data-fr="Science des matériaux" data-en="Materials Science">Science des matériaux</span>
+      <span class="tag tag-v" data-fr="Thermo-fluides" data-en="Thermo-fluids">Thermo-fluides</span>
+      <span class="tag tag-slate" data-fr="Gestion de projets" data-en="Project Management">Gestion de projets</span>
+    </div>
+  </div>
+</div>
+
+<hr class="full-divider">
+
+
+<!-- ══════════════════════════════════════════
+     À PROPOS
+══════════════════════════════════════════ -->
+<section id="about" class="section-wrap">
+  <div class="section-header">
+    <div class="section-title" data-fr="À propos" data-en="About me">À propos</div>
+  </div>
+  <div class="about-grid">
+
+    <div class="about-photo-wrap">
+      <img src="assets/img/picture_anas_hadouche.png" alt="Anas Hadouche">
+    </div>
+
+    <div class="about-text">
+      <p data-fr="Étudiant en 4ème année du cycle ingénieur à l'ICAM Toulouse (Bac+5), je me spécialise dans les systèmes industriels, l'électronique embarquée et le développement web. Ma formation généraliste m'a permis de développer des compétences solides en mécanique, électronique, informatique, thermofluides et gestion de projets." data-en="I'm a 4th-year engineering student at ICAM Toulouse (M.Eng), specialising in industrial systems, embedded electronics, and web development. My generalist training has given me strong foundations in mechanical engineering, electronics, IT, thermo-fluid mechanics, and project management.">
+        Étudiant en 4ème année du cycle ingénieur à l'ICAM Toulouse (Bac+5), je me spécialise dans les systèmes industriels, l'électronique embarquée et le développement web. Ma formation généraliste m'a permis de développer des compétences solides en mécanique, électronique, informatique, thermofluides et gestion de projets.
+      </p>
+      <p data-fr="Passionné par les applications automobiles et aérospatiales, j'aime contribuer à des équipes pluridisciplinaires et relever des défis techniques complexes. Mon parcours international — Toulouse, Meknès, et prochainement une année d'échange à Kochi, Inde (2026/2027) — renforce mon adaptabilité et mon ouverture sur le monde." data-en="Passionate about automotive and aerospace applications, I enjoy contributing to multidisciplinary teams and tackling complex engineering challenges. My international journey — Toulouse, Meknès, and soon a full exchange year in Kochi, India (2026/2027) — strengthens my adaptability and global mindset.">
+        Passionné par les applications automobiles et aérospatiales, j'aime contribuer à des équipes pluridisciplinaires et relever des défis techniques complexes. Mon parcours international — Toulouse, Meknès, et prochainement une année d'échange à Kochi, Inde (2026/2027) — renforce mon adaptabilité et mon ouverture sur le monde.
+      </p>
+      <div class="about-soft">
+        <span class="soft-tag" data-fr="Esprit critique" data-en="Critical Thinking">Esprit critique</span>
+        <span class="soft-tag" data-fr="Résolution de problèmes" data-en="Problem-Solving">Résolution de problèmes</span>
+        <span class="soft-tag" data-fr="Travail en équipe" data-en="Teamwork">Travail en équipe</span>
+        <span class="soft-tag" data-fr="Initiative" data-en="Initiative">Initiative</span>
+        <span class="soft-tag" data-fr="Adaptabilité" data-en="Adaptability">Adaptabilité</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="full-divider">
+
+
+<!-- ══════════════════════════════════════════
+     COMPÉTENCES
+══════════════════════════════════════════ -->
+<section id="skills" class="section-wrap">
+  <div class="section-header">
+    <div class="section-title" data-fr="Compétences" data-en="Skills">Compétences</div>
+  </div>
+
+  <div class="skills-layout">
+
+    <!-- Développement Web -->
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-icon" style="background:var(--violet-l)">🌐</div>
+        <span class="skill-card-title" data-fr="Développement Web" data-en="Web Development">Développement Web</span>
+      </div>
+      <div class="skill-chips">
+        <span class="stack-chip">HTML / CSS / JS</span>
+        <span class="stack-chip">Flask</span>
+        <span class="stack-chip">PHP / SQL</span>
+        <span class="stack-chip">Git / GitHub</span>
+      </div>
+    </div>
+
+    <!-- Programmation -->
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-icon" style="background:var(--blue-l)">💻</div>
+        <span class="skill-card-title" data-fr="Programmation" data-en="Programming">Programmation</span>
+      </div>
+      <div class="skill-chips">
+        <span class="stack-chip">Python</span>
+        <span class="stack-chip">C</span>
+        <span class="stack-chip">MATLAB</span>
+        <span class="stack-chip" data-fr="POO" data-en="OOP">POO</span>
+        <span class="stack-chip" data-fr="MOO / UML" data-en="OOM / UML">MOO / UML</span>
+      </div>
+    </div>
+
+    <!-- Embarqué & Électronique -->
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-icon" style="background:var(--green-l)">⚡</div>
+        <span class="skill-card-title" data-fr="Embarqué & Électronique" data-en="Embedded & Electronics">Embarqué & Électronique</span>
+      </div>
+      <div class="skill-chips">
+        <span class="stack-chip">ESP32</span>
+        <span class="stack-chip">Arduino</span>
+        <span class="stack-chip">UART / I2C / ADC</span>
+        <span class="stack-chip">LTSpice</span>
+        <span class="stack-chip">Logisim</span>
+      </div>
+    </div>
+
+    <!-- Mécanique & Conception -->
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-icon" style="background:#fce7f3">⚙️</div>
+        <span class="skill-card-title" data-fr="Mécanique & Conception" data-en="Mechanical & Design">Mécanique & Conception</span>
+      </div>
+      <div class="skill-chips">
+        <span class="stack-chip" data-fr="Résistance des structures" data-en="Structural Mechanics">Résistance des structures</span>
+        <span class="stack-chip" data-fr="Concentration de contraintes" data-en="Stress Concentration">Concentration de contraintes</span>
+        <span class="stack-chip" data-fr="Calcul flottabilité" data-en="Buoyancy Calc.">Calcul flottabilité</span>
+        <span class="stack-chip">SolidWorks</span>
+        <span class="stack-chip">OnShape</span>
+        <span class="stack-chip">Patran / Nastran</span>
+      </div>
+    </div>
+
+    <!-- Matériaux -->
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-icon" style="background:#ccfbf1">🔬</div>
+        <span class="skill-card-title" data-fr="Science des matériaux" data-en="Materials Science">Science des matériaux</span>
+      </div>
+      <div class="skill-chips">
+        <span class="stack-chip" data-fr="Microstructure des matériaux" data-en="Materials Microstructure">Microstructure des matériaux</span>
+        <span class="stack-chip" data-fr="Vieillissement des matériaux" data-en="Materials Ageing">Vieillissement des matériaux</span>
+        <span class="stack-chip" data-fr="Diagramme d'équilibre" data-en="Equilibrium Diagram">Diagramme d'équilibre</span>
+      </div>
+    </div>
+
+    <!-- Industrie & Méthodes -->
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-icon" style="background:var(--amber-l)">🏭</div>
+        <span class="skill-card-title" data-fr="Lean & Management" data-en="Lean & Management">Lean & Management</span>
+      </div>
+      <div class="skill-chips">
+        <span class="stack-chip">Lean / TPM / OEE</span>
+        <span class="stack-chip">5S</span>
+        <span class="stack-chip">PDCA / 8D</span>
+        <span class="stack-chip" data-fr="5 Pourquoi" data-en="5 Whys">5 Pourquoi</span>
+        <span class="stack-chip" data-fr="Ishikawa / Causes racines" data-en="Ishikawa / Root Cause">Ishikawa / Causes racines</span>
+        <span class="stack-chip">Kaizen</span>
+        <span class="stack-chip">MRP / Gantt</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="lang-grid">
+    <div class="lang-card">
+      <div class="lang-flag">🇫🇷</div>
+      <div class="lang-name" data-fr="Français" data-en="French">Français</div>
+      <div class="lang-level" data-fr="Langue natale" data-en="Native">Langue natale</div>
+    </div>
+    <div class="lang-card">
+      <div class="lang-flag">🇸🇦</div>
+      <div class="lang-name" data-fr="Arabe" data-en="Arabic">Arabe</div>
+      <div class="lang-level" data-fr="Courant" data-en="Fluent">Courant</div>
+    </div>
+    <div class="lang-card">
+      <div class="lang-flag">🇬🇧</div>
+      <div class="lang-name" data-fr="Anglais" data-en="English">Anglais</div>
+      <div class="lang-level">TOEIC — 2026</div>
+      <a href="assets/pdf/toeic_anas_hadouche.pdf" download class="lang-cert" data-fr="Voir le certificat" data-en="View certificate">Voir le certificat</a>
+    </div>
+    <div class="lang-card">
+      <div class="lang-flag">🇪🇸</div>
+      <div class="lang-name" data-fr="Espagnol" data-en="Spanish">Espagnol</div>
+      <div class="lang-level" data-fr="Intermédiaire" data-en="Intermediate">Intermédiaire</div>
+    </div>
+  </div>
+
+</section>
+
+<hr class="full-divider">
+
+
+<!-- ══════════════════════════════════════════
+     PARCOURS — EXPÉRIENCE PROFESSIONNELLE
+══════════════════════════════════════════ -->
+<section id="parcours" class="section-wrap">
+  <div class="section-header">
+    <div class="section-title" data-fr="Expérience" data-en="Experience">Expérience</div>
+    <div class="section-sub" data-fr="Professionnelle" data-en="Professional">Professionnelle</div>
+  </div>
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-date" data-fr="Mai — Juillet 2026" data-en="May — July 2026">Mai — Juillet 2026</div>
+      <div class="tl-title" data-fr="Stage assistant ingénieur" data-en="Assistant Engineer Internship">Stage assistant ingénieur</div>
+      <div class="tl-org"><a href="https://www.lear.com/" target="_blank" rel="noopener" class="tl-org-link">Lear Corporation</a> · Meknès, Maroc</div>
+      <div class="tl-desc" data-fr="Développement du système TPM Silver Level — Digitalisation du Tag Box dans la zone de coupe. Application web full-stack (Flask, Python, MySQL) avec 3 rôles utilisateurs et interface bilingue FR/AR." data-en="TPM Silver Level system development — Tag Box digitalisation in the cutting zone. Full-stack web app (Flask, Python, MySQL) with 3 user roles and bilingual FR/AR interface.">Développement du système TPM Silver Level — Digitalisation du Tag Box dans la zone de coupe. Application web full-stack (Flask, Python, MySQL) avec 3 rôles utilisateurs et interface bilingue FR/AR.</div>
+      <a href="projects/tag-box.html" class="tl-link" data-fr="Voir le projet →" data-en="See project →">Voir le projet →</a>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-date" data-fr="Jan — Fév 2025" data-en="Jan — Feb 2025">Jan — Fév 2025</div>
+      <div class="tl-title" data-fr="Stage technicien maintenance" data-en="Maintenance Technician Internship">Stage technicien maintenance</div>
+      <div class="tl-org"><a href="https://www.ocpgroup.ma/" target="_blank" rel="noopener" class="tl-org-link">OCP Group</a> · Khouribga, Maroc</div>
+      <div class="tl-desc" data-fr="Maintenance électrique grande et moyenne tension. Étude du circuit de communication fibre optique des stockeuses de phosphate. Assistance maintenance préventive et corrective." data-en="High and medium voltage electrical maintenance. Study of the fibre-optic communication circuit for phosphate storage facilities. Preventive and corrective maintenance support.">Maintenance électrique grande et moyenne tension. Étude du circuit de communication fibre optique des stockeuses de phosphate. Assistance maintenance préventive et corrective.</div>
+      <a href="projects/ocp.html" class="tl-link" data-fr="Voir le projet →" data-en="See project →">Voir le projet →</a>
+    </div>
+
+  </div>
+</section>
+
+<hr class="full-divider">
+
+
+<!-- ══════════════════════════════════════════
+     PARCOURS — FORMATION
+══════════════════════════════════════════ -->
+<section class="section-wrap">
+  <div class="section-header">
+    <div class="section-title" data-fr="Formation" data-en="Education">Formation</div>
+  </div>
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-dot future"></div>
+      <div class="tl-date">2026 — 2027</div>
+      <div class="tl-title" data-fr="Programme d'échange" data-en="Exchange Program">Programme d'échange</div>
+      <div class="tl-org"><a href="https://www.rajagiritech.ac.in/Home/Index.asp" target="_blank" rel="noopener" class="tl-org-link">Rajagiri School of Engineering & Technology</a> · Kochi, Inde</div>
+      <div class="tl-desc" data-fr="Programme d'échange international de 11 mois en ingénierie." data-en="11-month international engineering exchange programme.">Programme d'échange international de 11 mois en ingénierie.</div>
+      <span class="tl-badge" data-fr="À venir" data-en="Upcoming">À venir</span>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-date">2023 — 2029</div>
+      <div class="tl-title" data-fr="Cycle ingénieur M.Eng" data-en="M.Eng General Engineering">Cycle ingénieur M.Eng</div>
+      <div class="tl-org"><a href="https://www.icam.fr/" target="_blank" rel="noopener" class="tl-org-link">ICAM Toulouse</a> · France</div>
+      <div class="tl-desc" data-fr="Formation généraliste Bac+5 : mécanique, électronique, informatique, thermofluides, lean manufacturing, gestion de projets." data-en="5-year generalist engineering programme: mechanical, electronics, IT, thermo-fluids, lean manufacturing, project management.">Formation généraliste Bac+5 : mécanique, électronique, informatique, thermofluides, lean manufacturing, gestion de projets.</div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-date">2020 — 2023</div>
+      <div class="tl-title" data-fr="Baccalauréat" data-en="Baccalaureate (A-levels)">Baccalauréat</div>
+      <div class="tl-org"><a href="https://victor-hugo-colomiers.mon-ent-occitanie.fr/" target="_blank" rel="noopener" class="tl-org-link">Lycée International Victor Hugo</a> · Colomiers, France</div>
+      <div class="tl-desc" data-fr="Mathématiques, Physique-Chimie, Sciences de l'Ingénieur." data-en="Mathematics, Physics-Chemistry, Engineering Sciences.">Mathématiques, Physique-Chimie, Sciences de l'Ingénieur.</div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="full-divider">
+
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════ -->
+<section id="contact" class="section-wrap">
+  <div class="section-header">
+    <div class="section-title">Contact</div>
+    <div class="section-sub" data-fr="Disponible pour toute opportunité" data-en="Open to any opportunity">Disponible pour toute opportunité</div>
+  </div>
+  <div class="contact-grid contact-grid-4">
+    <a href="mailto:anas.hadouche@2029.icam.fr" class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <div class="contact-label">Email</div>
+      <div class="contact-value">anas.hadouche@2029.icam.fr</div>
+    </a>
+    <a href="https://www.linkedin.com/in/anas-hadouche/" target="_blank" rel="noopener" class="contact-card">
+      <div class="contact-icon">💼</div>
+      <div class="contact-label">LinkedIn</div>
+      <div class="contact-value">linkedin.com/in/anas-hadouche</div>
+    </a>
+    <a href="https://github.com/Anas31317" target="_blank" rel="noopener" class="contact-card">
+      <div class="contact-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      </div>
+      <div class="contact-label">GitHub</div>
+      <div class="contact-value">github.com/Anas31317</div>
+    </a>
+    <a href="tel:+33782266298" class="contact-card">
+      <div class="contact-icon">📞</div>
+      <div class="contact-label" data-fr="Téléphone" data-en="Phone">Téléphone</div>
+      <div class="contact-value">+33 7 82 26 62 98</div>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-logo">ANAS HADOUCHE<span>.</span></div>
+  <div class="footer-copy" data-fr="© 2026 · Tous droits réservés" data-en="© 2026 · All rights reserved">© 2026 · Tous droits réservés</div>
+</footer>
+
+
+<!-- ══════════════════════════════════════════
+     JS — LANGUE BILINGUE FR/EN
+══════════════════════════════════════════ -->
+<script>
+  let currentLang = 'fr';
+
+  function setLang(lang) {
+    currentLang = lang;
+    document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+      el.textContent = el.getAttribute('data-' + lang);
+    });
+    document.querySelectorAll('.nav-lang button').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+    });
+    document.documentElement.lang = lang;
+  }
+  setLang('fr');
+</script>
+
+</body>
+</html>
