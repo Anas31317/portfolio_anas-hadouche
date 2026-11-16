@@ -309,3 +309,5 @@
   .proj-gallery { grid-template-columns: 1fr; }
   .proj-nav-inner { flex-direction: column; gap: 12px; text-align: center; }
 }
+
+.proj-text + .proj-features { margin-top: 20px; }
