@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Suivi Muscu — application web de suivi de musculation et de cardio, projet personnel d'Anas Hadouche.">
+  <title>Suivi Muscu — Anas Hadouche</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../assets/project.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">ANAS HADOUCHE<em>.</em></a>
+  <ul class="nav-links">
+    <li><a href="../index.html#about"    data-fr="À propos"    data-en="About">À propos</a></li>
+    <li><a href="../projects.html"       data-fr="Projets"     data-en="Projects" style="color:var(--accent)">Projets</a></li>
+    <li><a href="../index.html#skills"   data-fr="Compétences" data-en="Skills">Compétences</a></li>
+    <li><a href="../index.html#parcours" data-fr="Parcours"    data-en="Background">Parcours</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://github.com/Anas31317" target="_blank" rel="noopener" class="nav-gh">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      GitHub
+    </a>
+    <div class="nav-lang">
+      <button class="active" onclick="setLang('fr')">FR</button>
+      <button onclick="setLang('en')">EN</button>
+    </div>
+    <a href="../index.html#contact" class="nav-cta" data-fr="Contact" data-en="Contact">Contact</a>
+  </div>
+</nav>
+
+
+<!-- ══ HERO PROJET ══ -->
+<div class="proj-hero">
+  <div class="proj-hero-inner">
+    <a href="../projects.html" class="breadcrumb" data-fr="← Tous les projets" data-en="← All projects">← Tous les projets</a>
+    <div class="proj-hero-tags">
+      <span class="tag">Web</span>
+      <span class="tag" data-fr="Application mobile" data-en="Mobile app">Application mobile</span>
+      <span class="tag" data-fr="Projet personnel" data-en="Personal project">Projet personnel</span>
+    </div>
+    <h1 class="proj-hero-title" data-fr="Suivi Muscu" data-en="Suivi Muscu">Suivi Muscu</h1>
+    <p class="proj-hero-sub" data-fr="Application web de suivi de musculation et de cardio, installable sur téléphone" data-en="Weight training and cardio tracking web app, installable on a phone">Application web de suivi de musculation et de cardio, installable sur téléphone</p>
+    <div class="proj-hero-meta">
+      <div class="proj-meta-item">
+        <span class="proj-meta-label" data-fr="Cadre" data-en="Setting">Cadre</span>
+        <span class="proj-meta-val" data-fr="Projet personnel" data-en="Personal project">Projet personnel</span>
+      </div>
+      <div class="proj-meta-item">
+        <span class="proj-meta-label" data-fr="Période" data-en="Period">Période</span>
+        <span class="proj-meta-val" data-fr="Depuis septembre 2026" data-en="Since September 2026">Depuis septembre 2026</span>
+      </div>
+      <div class="proj-meta-item">
+        <span class="proj-meta-label" data-fr="Utilisateurs" data-en="Users">Utilisateurs</span>
+        <span class="proj-meta-val" data-fr="Un petit groupe d'amis" data-en="A small group of friends">Un petit groupe d'amis</span>
+      </div>
+      <div class="proj-meta-item">
+        <span class="proj-meta-label" data-fr="Version" data-en="Version">Version</span>
+        <span class="proj-meta-val" data-fr="1.24 · en ligne" data-en="1.24 · live">1.24 · en ligne</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="full-divider">
+
+<div class="proj-body">
+
+  <!-- Contexte -->
+  <section class="proj-section">
+    <div class="proj-section-label" data-fr="Contexte" data-en="Context">Contexte</div>
+    <h2 class="proj-section-title" data-fr="Suivre ses séances, même sans réseau" data-en="Tracking workouts, even offline">Suivre ses séances, même sans réseau</h2>
+    <p class="proj-text" data-fr="Suivi Muscu est une application que j'ai développée seul pour suivre les séances de musculation et de cardio d'un petit groupe d'amis. Chacun a son compte, son programme et son historique privé. Elle s'installe sur le téléphone comme une application et reste utilisable sans réseau à la salle : tout repart vers le compte au retour de la connexion." data-en="Suivi Muscu is an app I built on my own to track the weight training and cardio sessions of a small group of friends. Everyone has their own account, programme and private history. It installs on a phone like an app and keeps working without a connection at the gym: everything syncs back to the account once online.">Suivi Muscu est une application que j'ai développée seul pour suivre les séances de musculation et de cardio d'un petit groupe d'amis. Chacun a son compte, son programme et son historique privé. Elle s'installe sur le téléphone comme une application et reste utilisable sans réseau à la salle : tout repart vers le compte au retour de la connexion.</p>
+  </section>
+
+  <hr class="proj-divider">
+
+  <!-- Fonctionnalités -->
+  <section class="proj-section">
+    <div class="proj-section-label" data-fr="Fonctionnalités" data-en="Features">Fonctionnalités</div>
+    <h2 class="proj-section-title" data-fr="Ce que fait l'application" data-en="What the app does">Ce que fait l'application</h2>
+    <div class="proj-features">
+      <div class="proj-feature">
+        <div class="proj-feature-title" data-fr="Séances et historique" data-en="Sessions and history">Séances et historique</div>
+        <p class="proj-feature-desc" data-fr="Le programme se lance séance par séance ; chaque série affiche ce qui a été fait la fois précédente. L'historique n'est jamais réécrit." data-en="The programme runs session by session; each set shows what was done the previous time. History is never rewritten.">Le programme se lance séance par séance ; chaque série affiche ce qui a été fait la fois précédente. L'historique n'est jamais réécrit.</p>
+      </div>
+      <div class="proj-feature">
+        <div class="proj-feature-title" data-fr="Courbes de progression" data-en="Progress charts">Courbes de progression</div>
+        <p class="proj-feature-desc" data-fr="Une courbe par exercice : volume, charge max ou répétitions, et estimation du 1RM à partir de la dernière séance." data-en="One chart per exercise: volume, max load or reps, and a 1RM estimate from the last session.">Une courbe par exercice : volume, charge max ou répétitions, et estimation du 1RM à partir de la dernière séance.</p>
+      </div>
+      <div class="proj-feature">
+        <div class="proj-feature-title" data-fr="Cardio" data-en="Cardio">Cardio</div>
+        <p class="proj-feature-desc" data-fr="Tapis, course, vélo, rameur… durée, distance ou vitesse (l'une calcule l'autre), avec les totaux sur 7 et 30 jours." data-en="Treadmill, running, cycling, rowing… duration, distance or speed (one computes the other), with 7- and 30-day totals.">Tapis, course, vélo, rameur… durée, distance ou vitesse (l'une calcule l'autre), avec les totaux sur 7 et 30 jours.</p>
+      </div>
+      <div class="proj-feature">
+        <div class="proj-feature-title" data-fr="Catalogue d'exercices" data-en="Exercise catalogue">Catalogue d'exercices</div>
+        <p class="proj-feature-desc" data-fr="Plus de 170 exercices, avec les muscles travaillés dessinés sur deux silhouettes (face et dos). Recherche en français et en anglais." data-en="Over 170 exercises, with the muscles worked drawn on two body diagrams (front and back). Search in French and English.">Plus de 170 exercices, avec les muscles travaillés dessinés sur deux silhouettes (face et dos). Recherche en français et en anglais.</p>
+      </div>
+      <div class="proj-feature">
+        <div class="proj-feature-title" data-fr="Partage entre amis" data-en="Sharing with friends">Partage entre amis</div>
+        <p class="proj-feature-desc" data-fr="Un code de partage donne accès à son suivi en lecture seule. Générer un nouveau code coupe l'accès aux anciens." data-en="A share code gives read-only access to one's progress. Generating a new code revokes the old ones.">Un code de partage donne accès à son suivi en lecture seule. Générer un nouveau code coupe l'accès aux anciens.</p>
+      </div>
+      <div class="proj-feature">
+        <div class="proj-feature-title" data-fr="Hors ligne et installable" data-en="Offline and installable">Hors ligne et installable</div>
+        <p class="proj-feature-desc" data-fr="Application web progressive (PWA) : installation sur Android et iPhone, saisie hors ligne, synchronisation automatique." data-en="Progressive web app (PWA): installs on Android and iPhone, offline input, automatic sync.">Application web progressive (PWA) : installation sur Android et iPhone, saisie hors ligne, synchronisation automatique.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="proj-divider">
+
+  <!-- Choix techniques -->
+  <section class="proj-section">
+    <div class="proj-section-label" data-fr="Choix techniques" data-en="Technical choices">Choix techniques</div>
+    <h2 class="proj-section-title" data-fr="Simple à héberger, sûr pour les données" data-en="Easy to host, safe for data">Simple à héberger, sûr pour les données</h2>
+    <p class="proj-text" data-fr="Le site est entièrement statique (HTML, CSS et JavaScript à modules, sans étape de build) et hébergé sur GitHub Pages. Les comptes et les données sont gérés par Supabase (base PostgreSQL) : chaque utilisateur ne peut lire et modifier que ses propres données grâce aux règles de sécurité de la base (Row Level Security), et l'inscription est limitée à une liste d'emails autorisés." data-en="The site is fully static (HTML, CSS and modular JavaScript, no build step) and hosted on GitHub Pages. Accounts and data are handled by Supabase (PostgreSQL database): each user can only read and change their own data thanks to the database security rules (Row Level Security), and sign-up is restricted to an allow-list of emails.">Le site est entièrement statique (HTML, CSS et JavaScript à modules, sans étape de build) et hébergé sur GitHub Pages. Les comptes et les données sont gérés par Supabase (base PostgreSQL) : chaque utilisateur ne peut lire et modifier que ses propres données grâce aux règles de sécurité de la base (Row Level Security), et l'inscription est limitée à une liste d'emails autorisés.</p>
+    <p class="proj-text" style="margin-top:12px" data-fr="Un service worker met l'application en cache pour le mode hors ligne, et les données sont gardées localement par compte puis synchronisées. Les graphiques sont dessinés en SVG par le site lui-même, sans bibliothèque externe." data-en="A service worker caches the app for offline use, and data is stored locally per account then synced. Charts are drawn in SVG by the site itself, with no external library.">Un service worker met l'application en cache pour le mode hors ligne, et les données sont gardées localement par compte puis synchronisées. Les graphiques sont dessinés en SVG par le site lui-même, sans bibliothèque externe.</p>
+  </section>
+
+  <hr class="proj-divider">
+
+  <!-- Compétences -->
+  <section class="proj-section">
+    <div class="proj-section-label" data-fr="Compétences mobilisées" data-en="Skills applied">Compétences mobilisées</div>
+    <div class="proj-stack-grid">
+      <div class="proj-stack-group">
+        <div class="proj-stack-group-title">Frontend</div>
+        <div class="proj-chips">
+          <span class="stack-chip">HTML / CSS</span> <span class="stack-chip" data-fr="JavaScript (modules ES)" data-en="JavaScript (ES modules)">JavaScript (modules ES)</span> <span class="stack-chip" data-fr="Graphiques SVG" data-en="SVG charts">Graphiques SVG</span> <span class="stack-chip" data-fr="Thème clair / sombre" data-en="Light / dark theme">Thème clair / sombre</span>
+        </div>
+      </div>
+      <div class="proj-stack-group">
+        <div class="proj-stack-group-title" data-fr="Backend &amp; données" data-en="Backend &amp; data">Backend &amp; données</div>
+        <div class="proj-chips">
+          <span class="stack-chip">Supabase</span> <span class="stack-chip">PostgreSQL</span> <span class="stack-chip">Row Level Security</span> <span class="stack-chip" data-fr="Authentification email" data-en="Email authentication">Authentification email</span>
+        </div>
+      </div>
+      <div class="proj-stack-group">
+        <div class="proj-stack-group-title" data-fr="Mobile &amp; déploiement" data-en="Mobile &amp; deployment">Mobile &amp; déploiement</div>
+        <div class="proj-chips">
+          <span class="stack-chip">PWA</span> <span class="stack-chip">Service Worker</span> <span class="stack-chip" data-fr="Mode hors ligne" data-en="Offline mode">Mode hors ligne</span> <span class="stack-chip">GitHub Pages</span> <span class="stack-chip">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="proj-divider">
+
+  <!-- Captures -->
+  <section class="proj-section">
+    <div class="proj-section-label" data-fr="Captures d'écran" data-en="Screenshots">Captures d'écran</div>
+    <h2 class="proj-section-title" data-fr="L'application en images" data-en="The app in images">L'application en images</h2>
+    <p class="proj-text" data-fr="Captures réalisées avec un compte de démonstration ; cliquez sur l'image pour l'agrandir." data-en="Screenshots taken with a demo account; click the image to enlarge it.">Captures réalisées avec un compte de démonstration ; cliquez sur l'image pour l'agrandir.</p>
+    <div class="tbv tbv-phone">
+      <script type="application/json" class="tbv-data">[[{"src": "../assets/img/muscu/muscu_accueil.jpg", "fr": "Accueil : prochaine séance, chiffres de la semaine et activité", "en": "Home: next session, weekly figures and activity"}, {"src": "../assets/img/muscu/muscu_seance.jpg", "fr": "Séance en cours : chaque série rappelle la fois précédente", "en": "Session in progress: each set shows the previous time"}, {"src": "../assets/img/muscu/muscu_progression.jpg", "fr": "Progrès : une courbe par exercice (volume, charge max, reps)", "en": "Progress: one chart per exercise (volume, max load, reps)"}, {"src": "../assets/img/muscu/muscu_cardio.jpg", "fr": "Cardio : durée, distance, vitesse et historique", "en": "Cardio: duration, distance, speed and history"}, {"src": "../assets/img/muscu/muscu_catalogue.jpg", "fr": "Catalogue de 170 exercices avec les muscles travaillés", "en": "Catalogue of 170 exercises with the muscles worked"}, {"src": "../assets/img/muscu/muscu_amis.jpg", "fr": "Partage du suivi avec un code, en lecture seule", "en": "Sharing progress with a code, read-only"}]]</script>
+      <div class="tbv-tabs"></div>
+      <div class="tbv-stage">
+        <button class="tbv-arrow prev" aria-label="Précédente">&#8249;</button>
+        <img class="tbv-main proj-gallery-img-web" src="../assets/img/muscu/muscu_accueil.jpg" alt="Accueil : prochaine séance, chiffres de la semaine et activité">
+        <button class="tbv-arrow next" aria-label="Suivante">&#8250;</button>
+      </div>
+      <div class="tbv-caption">Accueil : prochaine séance, chiffres de la semaine et activité</div>
+      <div class="tbv-thumbs"></div>
+    </div>
+  </section>
+
+  <hr class="proj-divider">
+
+  <!-- Code source -->
+  <section class="proj-section">
+    <div class="proj-section-label" data-fr="Code source" data-en="Source code">Code source</div>
+    <h2 class="proj-section-title" data-fr="Le projet sur GitHub" data-en="The project on GitHub">Le projet sur GitHub</h2>
+    <p class="proj-text" data-fr="Le code complet et la documentation (fonctionnement, sécurité, installation) sont disponibles sur le dépôt GitHub." data-en="The full code and documentation (how it works, security, setup) are available on the GitHub repository.">Le code complet et la documentation (fonctionnement, sécurité, installation) sont disponibles sur le dépôt GitHub.</p>
+    <p class="proj-text"><a href="https://github.com/Anas31317/anas_suivi_muscu" target="_blank" rel="noopener" class="tl-link" data-fr="Voir le dépôt →" data-en="See repository →">Voir le dépôt →</a></p>
+  </section>
+
+</div>
+
+<div class="proj-nav">
+  <div class="proj-nav-inner">
+    <a href="bateau.html" class="proj-nav-back" data-fr="← Projet précédent : Bateau" data-en="← Previous project: Boat">← Projet précédent : Bateau</a>
+    <a href="../projects.html" class="proj-nav-next" data-fr="Tous les projets →" data-en="All projects →">Tous les projets →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">ANAS HADOUCHE<span>.</span></div>
+  <div class="footer-links">
+    <a href="../projects.html" class="footer-gh" data-fr="Projets" data-en="Projects">Projets</a>
+    <a href="https://github.com/Anas31317" target="_blank" rel="noopener" class="footer-gh">GitHub</a>
+    <a href="https://www.linkedin.com/in/anas-hadouche/" target="_blank" rel="noopener" class="footer-gh">LinkedIn</a>
+  </div>
+  <div class="footer-copy" data-fr="© 2026 · Tous droits réservés" data-en="© 2026 · All rights reserved">© 2026 · Tous droits réservés</div>
+</footer>
+
+<script>
+  let currentLang = 'fr';
+  function setLang(lang) {
+    currentLang = lang;
+    document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+      el.textContent = el.getAttribute('data-' + lang);
+    });
+    document.querySelectorAll('.nav-lang button').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+    });
+    document.documentElement.lang = lang;
+  }
+  setLang('fr');
+
+
+  document.querySelectorAll('.proj-gallery-img, .proj-gallery-img-web').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+      const lb = document.createElement('div');
+      lb.className = 'lightbox';
+      lb.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
+      lb.addEventListener('click', () => lb.remove());
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.remove(); }, { once: true });
+      document.body.appendChild(lb);
+    });
+  });
+</script>
+
+<script src="../assets/viewer.js"></script>
+</body>
+</html>

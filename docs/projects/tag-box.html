@@ -7,22 +7,6 @@
   <title>Tag Box — Anas Hadouche</title>
   <link rel="stylesheet" href="../assets/style.css">
   <link rel="stylesheet" href="../assets/project.css">
-<style>
-  .tbv { overflow: hidden; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-top: 20px; }
-  .tbv-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
-  .tbv-tab { border: 1px solid var(--border); background: var(--surface2); color: var(--text-2); border-radius: 999px; padding: 6px 14px; font-size: 13px; cursor: pointer; font-family: inherit; }
-  .tbv-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-  .tbv-stage { position: relative; background: var(--bg); border-radius: var(--radius-s); display: flex; align-items: center; justify-content: center; height: 420px; overflow: hidden; }
-  .tbv-main { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
-  .tbv-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 22px; line-height: 1; cursor: pointer; }
-  .tbv-arrow.prev { left: 10px; } .tbv-arrow.next { right: 10px; }
-  .tbv-arrow[hidden] { display: none; }
-  .tbv-caption { font-size: 14px; color: var(--text-2); margin: 10px 2px 12px; }
-  .tbv-thumbs { max-width: 100%; display: flex; gap: 8px; overflow-x: auto; }
-  .tbv-thumbs img { height: 56px; width: auto; border-radius: 4px; border: 2px solid transparent; cursor: pointer; opacity: .6; }
-  .tbv-thumbs img.active { border-color: var(--accent); opacity: 1; }
-  @media (max-width: 640px) { .tbv-stage { height: 240px; } }
-</style>
 </head>
 <body>
 
@@ -184,6 +168,7 @@
     <h2 class="proj-section-title" data-fr="L'application en images" data-en="The application in images">L'application en images</h2>
     <p class="proj-text" data-fr="Une vue par rôle. Captures réalisées avec des données de test ; cliquez sur l'image pour l'agrandir." data-en="One view per role. Screenshots taken with test data; click the image to enlarge it.">Une vue par rôle. Captures réalisées avec des données de test ; cliquez sur l'image pour l'agrandir.</p>
     <div class="tbv">
+      <script type="application/json" class="tbv-data">[[{"src": "../assets/img/tagbox/tagbox_connexion.jpg", "fr": "Choix du profil parmi les 4 rôles", "en": "Profile selection among the 4 roles"}, {"src": "../assets/img/tagbox/tagbox_operateur_checklist.jpg", "fr": "Check-list maintenance 1er niveau", "en": "First-level maintenance checklist"}, {"src": "../assets/img/tagbox/tagbox_operateur_signalement.jpg", "fr": "Signalement d'une anomalie", "en": "Reporting an anomaly"}, {"src": "../assets/img/tagbox/tagbox_operateur_arret.jpg", "fr": "Déclaration d'un arrêt machine", "en": "Declaring a machine stop"}], [{"src": "../assets/img/tagbox/tagbox_technicien.jpg", "fr": "Signalements à prendre en charge", "en": "Reports to take over"}], [{"src": "../assets/img/tagbox/tagbox_chef_kpi.jpg", "fr": "KPI maintenance : MTTR, MTBF, disponibilité", "en": "Maintenance KPIs: MTTR, MTBF, availability"}, {"src": "../assets/img/tagbox/tagbox_chef_suivi_machines.jpg", "fr": "Suivi des machines par shift", "en": "Machine tracking per shift"}, {"src": "../assets/img/tagbox/tagbox_chef_analyse.jpg", "fr": "Analyse des interventions", "en": "Intervention analysis"}], [{"src": "../assets/img/tagbox/tagbox_admin_comptes.jpg", "fr": "Gestion des comptes", "en": "Account management"}, {"src": "../assets/img/tagbox/tagbox_admin_postes.jpg", "fr": "Gestion des postes et des check-lists", "en": "Workstation and checklist management"}]]</script>
       <div class="tbv-tabs"><button class="tbv-tab active" data-g="0" data-fr="Opérateur" data-en="Operator">Opérateur</button><button class="tbv-tab" data-g="1" data-fr="Technicien" data-en="Technician">Technicien</button><button class="tbv-tab" data-g="2" data-fr="Chef d'équipe" data-en="Team leader">Chef d'équipe</button><button class="tbv-tab" data-g="3" data-fr="Administrateur" data-en="Administrator">Administrateur</button></div>
       <div class="tbv-stage">
         <button class="tbv-arrow prev" aria-label="Précédente">&#8249;</button>
@@ -271,34 +256,6 @@
   }
   setLang('fr');
 
-  // Visionneuse des captures (un onglet par rôle)
-  (function () {
-    const groups = [[{"src": "../assets/img/tagbox/tagbox_connexion.jpg", "fr": "Choix du profil parmi les 4 rôles", "en": "Profile selection among the 4 roles"}, {"src": "../assets/img/tagbox/tagbox_operateur_checklist.jpg", "fr": "Check-list maintenance 1er niveau", "en": "First-level maintenance checklist"}, {"src": "../assets/img/tagbox/tagbox_operateur_signalement.jpg", "fr": "Signalement d'une anomalie", "en": "Reporting an anomaly"}, {"src": "../assets/img/tagbox/tagbox_operateur_arret.jpg", "fr": "Déclaration d'un arrêt machine", "en": "Declaring a machine stop"}], [{"src": "../assets/img/tagbox/tagbox_technicien.jpg", "fr": "Signalements à prendre en charge", "en": "Reports to take over"}], [{"src": "../assets/img/tagbox/tagbox_chef_kpi.jpg", "fr": "KPI maintenance : MTTR, MTBF, disponibilité", "en": "Maintenance KPIs: MTTR, MTBF, availability"}, {"src": "../assets/img/tagbox/tagbox_chef_suivi_machines.jpg", "fr": "Suivi des machines par shift", "en": "Machine tracking per shift"}, {"src": "../assets/img/tagbox/tagbox_chef_analyse.jpg", "fr": "Analyse des interventions", "en": "Intervention analysis"}], [{"src": "../assets/img/tagbox/tagbox_admin_comptes.jpg", "fr": "Gestion des comptes", "en": "Account management"}, {"src": "../assets/img/tagbox/tagbox_admin_postes.jpg", "fr": "Gestion des postes et des check-lists", "en": "Workstation and checklist management"}]];
-    const box = document.querySelector('.tbv'); if (!box) return;
-    const main = box.querySelector('.tbv-main'), cap = box.querySelector('.tbv-caption'), thumbs = box.querySelector('.tbv-thumbs');
-    const prev = box.querySelector('.prev'), next = box.querySelector('.next');
-    let g = 0, i = 0;
-    function render() {
-      const it = groups[g][i];
-      main.src = it.src; main.alt = it[currentLang]; cap.textContent = it[currentLang];
-      thumbs.innerHTML = '';
-      groups[g].forEach((t, k) => {
-        const im = document.createElement('img'); im.src = t.src; im.alt = t[currentLang];
-        if (k === i) im.classList.add('active');
-        im.onclick = () => { i = k; render(); }; thumbs.appendChild(im);
-      });
-      thumbs.style.display = groups[g].length > 1 ? 'flex' : 'none';
-      prev.hidden = next.hidden = groups[g].length < 2;
-    }
-    box.querySelectorAll('.tbv-tab').forEach(b => b.onclick = () => {
-      box.querySelectorAll('.tbv-tab').forEach(x => x.classList.toggle('active', x === b));
-      g = +b.dataset.g; i = 0; render();
-    });
-    prev.onclick = () => { i = (i - 1 + groups[g].length) % groups[g].length; render(); };
-    next.onclick = () => { i = (i + 1) % groups[g].length; render(); };
-    document.querySelectorAll('.nav-lang button').forEach(b => b.addEventListener('click', () => setTimeout(render, 0)));
-    render();
-  })();
 
   document.querySelectorAll('.proj-gallery-img, .proj-gallery-img-web').forEach(img => {
     img.style.cursor = 'zoom-in';
@@ -313,5 +270,6 @@
   });
 </script>
 
+<script src="../assets/viewer.js"></script>
 </body>
 </html>

@@ -272,6 +272,24 @@
   line-height: 1.7; font-weight: 300;
 }
 
+/* ── VISIONNEUSE DE CAPTURES (onglets + miniatures) ── */
+  .tbv { overflow: hidden; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-top: 20px; }
+  .tbv-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .tbv-tab { border: 1px solid var(--border); background: var(--surface2); color: var(--text-2); border-radius: 999px; padding: 6px 14px; font-size: 13px; cursor: pointer; font-family: inherit; }
+  .tbv-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .tbv-stage { position: relative; background: var(--bg); border-radius: var(--radius-s); display: flex; align-items: center; justify-content: center; height: 420px; overflow: hidden; }
+  .tbv-main { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+  .tbv-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 22px; line-height: 1; cursor: pointer; }
+  .tbv-arrow.prev { left: 10px; } .tbv-arrow.next { right: 10px; }
+  .tbv-arrow[hidden] { display: none; }
+  .tbv-caption { font-size: 14px; color: var(--text-2); margin: 10px 2px 12px; }
+  .tbv-thumbs { max-width: 100%; display: flex; gap: 8px; overflow-x: auto; }
+  .tbv-thumbs img { height: 56px; width: auto; border-radius: 4px; border: 2px solid transparent; cursor: pointer; opacity: .6; }
+  .tbv-thumbs img.active { border-color: var(--accent); opacity: 1; }
+.tbv-phone .tbv-stage { height: 560px; }
+.tbv-phone .tbv-thumbs img { height: 72px; }
+.tbv-single .tbv-tabs { display: none; }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .proj-hero-inner { padding: 36px 24px 32px; }
@@ -284,6 +302,8 @@
   .proj-video-portrait { aspect-ratio: 4/3; }
   .proj-hero-meta { gap: 20px; }
 }
+
+@media (max-width: 640px) { .tbv-stage { height: 240px; } .tbv-phone .tbv-stage { height: 460px; } }
 
 @media (max-width: 600px) {
   .proj-gallery { grid-template-columns: 1fr; }
