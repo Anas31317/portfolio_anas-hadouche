@@ -131,6 +131,16 @@ nav {
 }
 .hero-trail strong { color: var(--text-2); font-weight: 500; }
 .hero-trail .arrow { color: var(--accent); }
+.hero-search {
+  border-left: 3px solid var(--accent); background: var(--accent-l);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+  padding: 12px 16px; margin: -12px 0 28px; max-width: 480px;
+}
+.hero-search-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 4px;
+}
+.hero-search p { font-size: 13px; color: var(--text-2); line-height: 1.6; }
 .hero-btns { display: flex; gap: 12px; }
 .btn-primary {
   padding: 11px 24px; background: var(--accent); color: #fff;
