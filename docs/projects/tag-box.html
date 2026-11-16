@@ -8,19 +8,19 @@
   <link rel="stylesheet" href="../assets/style.css">
   <link rel="stylesheet" href="../assets/project.css">
 <style>
-  .tbv { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-top: 20px; }
+  .tbv { overflow: hidden; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-top: 20px; }
   .tbv-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
   .tbv-tab { border: 1px solid var(--border); background: var(--surface2); color: var(--text-2); border-radius: 999px; padding: 6px 14px; font-size: 13px; cursor: pointer; font-family: inherit; }
-  .tbv-tab.active { background: var(--violet); border-color: var(--violet); color: #fff; }
+  .tbv-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
   .tbv-stage { position: relative; background: var(--bg); border-radius: var(--radius-s); display: flex; align-items: center; justify-content: center; height: 420px; overflow: hidden; }
   .tbv-main { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
   .tbv-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 22px; line-height: 1; cursor: pointer; }
   .tbv-arrow.prev { left: 10px; } .tbv-arrow.next { right: 10px; }
   .tbv-arrow[hidden] { display: none; }
   .tbv-caption { font-size: 14px; color: var(--text-2); margin: 10px 2px 12px; }
-  .tbv-thumbs { display: flex; gap: 8px; overflow-x: auto; }
+  .tbv-thumbs { max-width: 100%; display: flex; gap: 8px; overflow-x: auto; }
   .tbv-thumbs img { height: 56px; width: auto; border-radius: 4px; border: 2px solid transparent; cursor: pointer; opacity: .6; }
-  .tbv-thumbs img.active { border-color: var(--violet); opacity: 1; }
+  .tbv-thumbs img.active { border-color: var(--accent); opacity: 1; }
   @media (max-width: 640px) { .tbv-stage { height: 240px; } }
 </style>
 </head>
@@ -30,7 +30,7 @@
   <a href="../index.html" class="nav-logo">ANAS HADOUCHE<em>.</em></a>
   <ul class="nav-links">
     <li><a href="../index.html#about"    data-fr="À propos"    data-en="About">À propos</a></li>
-    <li><a href="../projects.html"       data-fr="Projets"     data-en="Projects" style="color:var(--violet)">Projets</a></li>
+    <li><a href="../projects.html"       data-fr="Projets"     data-en="Projects" style="color:var(--accent)">Projets</a></li>
     <li><a href="../index.html#skills"   data-fr="Compétences" data-en="Skills">Compétences</a></li>
     <li><a href="../index.html#parcours" data-fr="Parcours"    data-en="Background">Parcours</a></li>
   </ul>
@@ -53,9 +53,9 @@
   <div class="proj-hero-inner">
     <a href="../projects.html" class="breadcrumb" data-fr="← Tous les projets" data-en="← All projects">← Tous les projets</a>
     <div class="proj-hero-tags">
-      <span class="tag tag-v">Web</span>
-      <span class="tag tag-v" data-fr="Industrie" data-en="Industry">Industrie</span>
-      <span class="tag tag-a">TPM · Lean</span>
+      <span class="tag">Web</span>
+      <span class="tag" data-fr="Industrie" data-en="Industry">Industrie</span>
+      <span class="tag">TPM · Lean</span>
     </div>
     <h1 class="proj-hero-title" data-fr="Digitalisation Tag Box" data-en="Tag Box Digitalisation">Digitalisation Tag Box</h1>
     <p class="proj-hero-sub" data-fr="Développement du système TPM Silver Level — Lear Corporation, Meknès" data-en="TPM Silver Level system development — Lear Corporation, Meknès">Développement du système TPM Silver Level — Lear Corporation, Meknès</p>

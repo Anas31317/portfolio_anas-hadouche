@@ -13,7 +13,7 @@
   <a href="index.html" class="nav-logo">ANAS HADOUCHE<em>.</em></a>
   <ul class="nav-links">
     <li><a href="index.html#about"  data-fr="À propos"    data-en="About">À propos</a></li>
-    <li><a href="projects.html"     data-fr="Projets"     data-en="Projects" style="color:var(--violet)">Projets</a></li>
+    <li><a href="projects.html"     data-fr="Projets"     data-en="Projects" style="color:var(--accent)">Projets</a></li>
     <li><a href="index.html#skills" data-fr="Compétences" data-en="Skills">Compétences</a></li>
     <li><a href="index.html#parcours" data-fr="Parcours"  data-en="Background">Parcours</a></li>
   </ul>
@@ -35,19 +35,23 @@
   <div class="page-header-inner">
     <a href="index.html" class="breadcrumb" data-fr="← Accueil" data-en="← Home">← Accueil</a>
     <div class="page-title" data-fr="Projets" data-en="Projects">Projets</div>
-    <p class="page-subtitle" data-fr="Trois projets menés dans des contextes très différents — industrie, école, terrain." data-en="Three projects carried out in very different contexts — industry, academia, fieldwork.">Trois projets menés dans des contextes très différents — industrie, école, terrain.</p>
+    <p class="page-subtitle" data-fr="Stages en entreprise, projets d'école et projets personnels." data-en="Company internships, school projects and personal projects.">Stages en entreprise, projets d'école et projets personnels.</p>
   </div>
 </div>
 
 <hr class="full-divider">
 
 <section class="section-wrap">
-  <div class="projects-grid" style="grid-template-columns:1fr; gap:16px">
-
+  <div class="proj-cat">
+    <div class="proj-cat-head">
+      <div class="proj-cat-title" data-fr="Projets professionnels" data-en="Professional projects">Projets professionnels</div>
+      <div class="proj-cat-count">02</div>
+    </div>
+    <div class="projects-grid" style="grid-template-columns:1fr; gap:16px">
     <!-- Lear Corporation — Tag Box -->
     <a href="projects/tag-box.html" class="proj-card proj-card-link">
       <div class="proj-top">
-        <span class="tag tag-v" data-fr="Web · Industrie" data-en="Web · Industry">Web · Industrie</span>
+        <span class="tag" data-fr="Web · Industrie" data-en="Web · Industry">Web · Industrie</span>
       </div>
       <div class="proj-title" data-fr="Digitalisation Tag Box — Lear Corporation" data-en="Tag Box Digitalisation — Lear Corporation">
         Digitalisation Tag Box — Lear Corporation
@@ -67,48 +71,15 @@ Remplacement d'un système papier de signalement des anomalies par une applicati
         <span class="stack-chip">TPM · Lean</span>
       </div>
       <div class="proj-footer">
-        <span style="font-size:11px; color:var(--text-3)">📍 Lear Corporation · Meknès · Mai–Août 2026</span>
+        <span class="proj-meta-line">Lear Corporation · Meknès · Mai–Août 2026</span>
         <span class="proj-cta" data-fr="Voir le projet →" data-en="See project →">Voir le projet →</span>
       </div>
     </a>
-
-    <!-- Projet Bateau -->
-    <a href="projects/bateau.html" class="proj-card proj-card-link">
-      <div class="proj-top">
-        <span class="tag tag-g" data-fr="Mécanique · CAO" data-en="Mechanical · CAD">Mécanique · CAO</span>
-        <span class="tag tag-b" data-fr="Embarqué · Web" data-en="Embedded · Web">Embarqué · Web</span>
-        <span class="proj-duration" data-fr="2 ans · 🏆 3/3" data-en="2 years · 🏆 3/3">2 ans · 🏆 3/3</span>
-      </div>
-      <div class="proj-title" data-fr="Projet Bateau — Conception, réalisation & système embarqué autonome" data-en="Boat Project — Design, Manufacturing & Autonomous Embedded System">
-        Projet Bateau — Conception, réalisation & système embarqué autonome
-      </div>
-      <div class="proj-desc" data-fr="Projet fil rouge sur 2 ans à l'ICAM Toulouse. Première année : théorie, modélisation CAO (OnShape/SolidWorks), calculs de flottabilité et synoptique électronique. Deuxième année : fabrication d'une coque en bois, intégration électronique complète (ESP32, GPS, IMU, FPGA) et développement d'un site web de télécommande embarqué avec autopilote GPS. 3 victoires / 3 courses lors de la démonstration finale." data-en="Two-year coursework project at ICAM Toulouse. Year 1: theory, CAD modelling (OnShape/SolidWorks), buoyancy calculations and electronic synoptic. Year 2: wood hull manufacturing, full electronics integration (ESP32, GPS, IMU, FPGA) and embedded remote control website with GPS autopilot. 3 wins / 3 races at the final demonstration.">
-        Projet fil rouge sur 2 ans à l'ICAM Toulouse.
-        Année 1 : théorie, modélisation CAO, calculs de flottabilité, synoptique électronique.
-        Année 2 : fabrication coque bois, intégration ESP32/GPS/IMU/FPGA, site web de télécommande avec autopilote GPS.
-        🏆 3 victoires / 3 courses lors de la démonstration finale.
-      </div>
-      <div class="proj-stack">
-        <span class="stack-chip">ESP32</span>
-        <span class="stack-chip">C++ / Arduino</span>
-        <span class="stack-chip">PlatformIO</span>
-        <span class="stack-chip">FPGA</span>
-        <span class="stack-chip">OnShape</span>
-        <span class="stack-chip">SolidWorks</span>
-        <span class="stack-chip">HTML / CSS / JS</span>
-        <span class="stack-chip">WebSocket</span>
-      </div>
-      <div class="proj-footer">
-        <span style="font-size:11px; color:var(--text-3)">📍 ICAM Toulouse · Sept 2024 – Mai 2026</span>
-        <span class="proj-cta" data-fr="Voir le projet →" data-en="See project →">Voir le projet →</span>
-      </div>
-    </a>
-
     <!-- OCP -->
     <a href="projects/ocp.html" class="proj-card proj-card-link">
       <div class="proj-top">
-        <span class="tag tag-a" data-fr="Électrique · Maintenance" data-en="Electrical · Maintenance">Électrique · Maintenance</span>
-        <span class="tag tag-b" data-fr="Télécoms" data-en="Telecoms">Télécoms</span>
+        <span class="tag" data-fr="Électrique · Maintenance" data-en="Electrical · Maintenance">Électrique · Maintenance</span>
+        <span class="tag" data-fr="Télécoms" data-en="Telecoms">Télécoms</span>
       </div>
       <div class="proj-title" data-fr="Stage technicien maintenance électrique — OCP Group" data-en="Electrical Maintenance Technician Internship — OCP Group">
         Stage technicien maintenance électrique — OCP Group
@@ -129,11 +100,79 @@ Rotation dans 4 secteurs : Installations Fixes, Réseaux HTA/HTB, Machines (Drag
         <span class="stack-chip">HSE</span>
       </div>
       <div class="proj-footer">
-        <span style="font-size:11px; color:var(--text-3)">📍 OCP Group · Mine MEA · Khouribga · Jan–Fév 2025</span>
+        <span class="proj-meta-line">OCP Group · Mine MEA · Khouribga · Jan–Fév 2025</span>
         <span class="proj-cta" data-fr="Voir le projet →" data-en="See project →">Voir le projet →</span>
       </div>
     </a>
-
+    </div>
+  </div>
+  <div class="proj-cat">
+    <div class="proj-cat-head">
+      <div class="proj-cat-title" data-fr="Projets scolaires" data-en="School projects">Projets scolaires</div>
+      <div class="proj-cat-count">01</div>
+    </div>
+    <div class="projects-grid" style="grid-template-columns:1fr; gap:16px">
+    <!-- Projet Bateau -->
+    <a href="projects/bateau.html" class="proj-card proj-card-link">
+      <div class="proj-top">
+        <span class="tag" data-fr="Mécanique · CAO" data-en="Mechanical · CAD">Mécanique · CAO</span>
+        <span class="tag" data-fr="Embarqué · Web" data-en="Embedded · Web">Embarqué · Web</span>
+        <span class="proj-duration" data-fr="2 ans · 3/3" data-en="2 years · 3/3">2 ans · 3/3</span>
+      </div>
+      <div class="proj-title" data-fr="Projet Bateau — Conception, réalisation & système embarqué autonome" data-en="Boat Project — Design, Manufacturing & Autonomous Embedded System">
+        Projet Bateau — Conception, réalisation & système embarqué autonome
+      </div>
+      <div class="proj-desc" data-fr="Projet fil rouge sur 2 ans à l'ICAM Toulouse. Première année : théorie, modélisation CAO (OnShape/SolidWorks), calculs de flottabilité et synoptique électronique. Deuxième année : fabrication d'une coque en bois, intégration électronique complète (ESP32, GPS, IMU, FPGA) et développement d'un site web de télécommande embarqué avec autopilote GPS. 3 victoires / 3 courses lors de la démonstration finale." data-en="Two-year coursework project at ICAM Toulouse. Year 1: theory, CAD modelling (OnShape/SolidWorks), buoyancy calculations and electronic synoptic. Year 2: wood hull manufacturing, full electronics integration (ESP32, GPS, IMU, FPGA) and embedded remote control website with GPS autopilot. 3 wins / 3 races at the final demonstration.">
+        Projet fil rouge sur 2 ans à l'ICAM Toulouse.
+        Année 1 : théorie, modélisation CAO, calculs de flottabilité, synoptique électronique.
+        Année 2 : fabrication coque bois, intégration ESP32/GPS/IMU/FPGA, site web de télécommande avec autopilote GPS.
+        3 victoires / 3 courses lors de la démonstration finale.
+      </div>
+      <div class="proj-stack">
+        <span class="stack-chip">ESP32</span>
+        <span class="stack-chip">C++ / Arduino</span>
+        <span class="stack-chip">PlatformIO</span>
+        <span class="stack-chip">FPGA</span>
+        <span class="stack-chip">OnShape</span>
+        <span class="stack-chip">SolidWorks</span>
+        <span class="stack-chip">HTML / CSS / JS</span>
+        <span class="stack-chip">WebSocket</span>
+      </div>
+      <div class="proj-footer">
+        <span class="proj-meta-line">ICAM Toulouse · Sept 2024 – Mai 2026</span>
+        <span class="proj-cta" data-fr="Voir le projet →" data-en="See project →">Voir le projet →</span>
+      </div>
+    </a>
+    </div>
+  </div>
+  <div class="proj-cat">
+    <div class="proj-cat-head">
+      <div class="proj-cat-title" data-fr="Projets personnels" data-en="Personal projects">Projets personnels</div>
+      <div class="proj-cat-count">01</div>
+    </div>
+    <div class="projects-grid" style="grid-template-columns:1fr; gap:16px">
+    <!-- Suivi Muscu -->
+    <div class="proj-card">
+      <div class="proj-top">
+        <span class="tag" data-fr="Web · Application mobile" data-en="Web · Mobile app">Web · Application mobile</span>
+      </div>
+      <div class="proj-title" data-fr="Suivi Muscu — application de suivi d'entraînement" data-en="Suivi Muscu — workout tracking app">Suivi Muscu — application de suivi d'entraînement</div>
+      <div class="proj-desc" data-fr="Application web installable sur téléphone (PWA) pour suivre ses séances de musculation et de cardio dans un petit groupe : un compte par personne, historique complet, courbes de progression, estimation du 1RM et partage en lecture seule avec des amis. Fonctionne hors ligne à la salle et se synchronise au retour du réseau. Catalogue de plus de 170 exercices avec les muscles travaillés affichés sur des silhouettes." data-en="Installable web app (PWA) to track weight training and cardio sessions in a small group: one account per person, full history, progress charts, 1RM estimate and read-only sharing with friends. Works offline at the gym and syncs when back online. Catalogue of 170+ exercises with the muscles worked shown on body diagrams.">Application web installable sur téléphone (PWA) pour suivre ses séances de musculation et de cardio dans un petit groupe : un compte par personne, historique complet, courbes de progression, estimation du 1RM et partage en lecture seule avec des amis. Fonctionne hors ligne à la salle et se synchronise au retour du réseau. Catalogue de plus de 170 exercices avec les muscles travaillés affichés sur des silhouettes.</div>
+      <div class="proj-stack">
+        <span class="stack-chip">HTML / CSS / JS</span>
+        <span class="stack-chip">PWA · Service Worker</span>
+        <span class="stack-chip">Supabase</span>
+        <span class="stack-chip">PostgreSQL</span>
+        <span class="stack-chip">GitHub Pages</span>
+      </div>
+      <div class="proj-footer">
+        <span class="proj-meta-line" data-fr="Projet personnel · 2026" data-en="Personal project · 2026">Projet personnel · 2026</span>
+        <span class="proj-links">
+          <a href="https://github.com/Anas31317/anas_suivi_muscu" target="_blank" rel="noopener" data-fr="Voir le dépôt →" data-en="See repository →">Voir le dépôt →</a>
+        </span>
+      </div>
+    </div>
+    </div>
   </div>
 </section>
 
