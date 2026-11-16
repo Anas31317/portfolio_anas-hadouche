@@ -7,6 +7,22 @@
   <title>Tag Box — Anas Hadouche</title>
   <link rel="stylesheet" href="../assets/style.css">
   <link rel="stylesheet" href="../assets/project.css">
+<style>
+  .tbv { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-top: 20px; }
+  .tbv-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .tbv-tab { border: 1px solid var(--border); background: var(--surface2); color: var(--text-2); border-radius: 999px; padding: 6px 14px; font-size: 13px; cursor: pointer; font-family: inherit; }
+  .tbv-tab.active { background: var(--violet); border-color: var(--violet); color: #fff; }
+  .tbv-stage { position: relative; background: var(--bg); border-radius: var(--radius-s); display: flex; align-items: center; justify-content: center; height: 420px; overflow: hidden; }
+  .tbv-main { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+  .tbv-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 22px; line-height: 1; cursor: pointer; }
+  .tbv-arrow.prev { left: 10px; } .tbv-arrow.next { right: 10px; }
+  .tbv-arrow[hidden] { display: none; }
+  .tbv-caption { font-size: 14px; color: var(--text-2); margin: 10px 2px 12px; }
+  .tbv-thumbs { display: flex; gap: 8px; overflow-x: auto; }
+  .tbv-thumbs img { height: 56px; width: auto; border-radius: 4px; border: 2px solid transparent; cursor: pointer; opacity: .6; }
+  .tbv-thumbs img.active { border-color: var(--violet); opacity: 1; }
+  @media (max-width: 640px) { .tbv-stage { height: 240px; } }
+</style>
 </head>
 <body>
 
@@ -152,28 +168,43 @@
   <section class="proj-section">
     <div class="proj-section-label" data-fr="Captures d'écran" data-en="Screenshots">Captures d'écran</div>
     <h2 class="proj-section-title" data-fr="L'application en images" data-en="The application in images">L'application en images</h2>
-    <p class="proj-text" data-fr="Captures réalisées avec des données de test." data-en="Screenshots taken with test data.">Captures réalisées avec des données de test.</p>
-    <div class="proj-section-label" style="margin-top:24px; margin-bottom:12px" data-fr="Connexion & opérateur" data-en="Login & operator">Connexion & opérateur</div>
-    <div class="proj-gallery" style="grid-template-columns:repeat(2,1fr)">
-      <img src="../assets/img/tagbox/tagbox_connexion.jpg" alt="Choix du profil parmi les 4 rôles" class="proj-gallery-img-web" loading="lazy">
-      <img src="../assets/img/tagbox/tagbox_operateur_checklist.jpg" alt="Opérateur — check-list 1er niveau" class="proj-gallery-img-web" loading="lazy">
-      <img src="../assets/img/tagbox/tagbox_operateur_signalement.jpg" alt="Opérateur — signalement d'une anomalie" class="proj-gallery-img-web" loading="lazy">
-      <img src="../assets/img/tagbox/tagbox_operateur_arret.jpg" alt="Opérateur — déclaration d'un arrêt machine" class="proj-gallery-img-web" loading="lazy">
+    <p class="proj-text" data-fr="Une vue par rôle. Captures réalisées avec des données de test ; cliquez sur l'image pour l'agrandir." data-en="One view per role. Screenshots taken with test data; click the image to enlarge it.">Une vue par rôle. Captures réalisées avec des données de test ; cliquez sur l'image pour l'agrandir.</p>
+    <div class="tbv">
+      <div class="tbv-tabs"><button class="tbv-tab active" data-g="0" data-fr="Opérateur" data-en="Operator">Opérateur</button><button class="tbv-tab" data-g="1" data-fr="Technicien" data-en="Technician">Technicien</button><button class="tbv-tab" data-g="2" data-fr="Chef d'équipe" data-en="Team leader">Chef d'équipe</button><button class="tbv-tab" data-g="3" data-fr="Administrateur" data-en="Administrator">Administrateur</button></div>
+      <div class="tbv-stage">
+        <button class="tbv-arrow prev" aria-label="Précédente">&#8249;</button>
+        <img class="tbv-main proj-gallery-img-web" src="../assets/img/tagbox/tagbox_connexion.jpg" alt="Choix du profil parmi les 4 rôles">
+        <button class="tbv-arrow next" aria-label="Suivante">&#8250;</button>
+      </div>
+      <div class="tbv-caption">Choix du profil parmi les 4 rôles</div>
+      <div class="tbv-thumbs"></div>
     </div>
-    <div class="proj-section-label" style="margin-top:24px; margin-bottom:12px" data-fr="Technicien" data-en="Technician">Technicien</div>
-    <div class="proj-gallery" style="grid-template-columns:repeat(2,1fr)">
-      <img src="../assets/img/tagbox/tagbox_technicien.jpg" alt="Technicien — signalements à prendre en charge" class="proj-gallery-img-web" loading="lazy">
-    </div>
-    <div class="proj-section-label" style="margin-top:24px; margin-bottom:12px" data-fr="Chef d'équipe" data-en="Team leader">Chef d'équipe</div>
-    <div class="proj-gallery" style="grid-template-columns:repeat(2,1fr)">
-      <img src="../assets/img/tagbox/tagbox_chef_analyse.jpg" alt="Chef d'équipe — analyse des interventions" class="proj-gallery-img-web" loading="lazy">
-      <img src="../assets/img/tagbox/tagbox_chef_kpi.jpg" alt="Chef d'équipe — KPI maintenance (MTTR, MTBF, disponibilité)" class="proj-gallery-img-web" loading="lazy">
-      <img src="../assets/img/tagbox/tagbox_chef_suivi_machines.jpg" alt="Chef d'équipe — suivi des machines par shift" class="proj-gallery-img-web" loading="lazy">
-    </div>
-    <div class="proj-section-label" style="margin-top:24px; margin-bottom:12px" data-fr="Administrateur" data-en="Administrator">Administrateur</div>
-    <div class="proj-gallery" style="grid-template-columns:repeat(2,1fr)">
-      <img src="../assets/img/tagbox/tagbox_admin_comptes.jpg" alt="Administrateur — gestion des comptes" class="proj-gallery-img-web" loading="lazy">
-      <img src="../assets/img/tagbox/tagbox_admin_postes.jpg" alt="Administrateur — gestion des postes et check-lists" class="proj-gallery-img-web" loading="lazy">
+  </section>
+
+  <hr class="proj-divider">
+
+  <!-- Rapport -->
+  <section class="proj-section">
+    <div class="proj-section-label" data-fr="Rapport de stage" data-en="Internship report">Rapport de stage</div>
+    <h2 class="proj-section-title" data-fr="Document complet disponible" data-en="Full document available">Document complet disponible</h2>
+    <p class="proj-text" data-fr="Le rapport de stage (27 pages, en anglais) détaille l'ensemble de la mission : contexte de Lear et du site de Meknès, analyse du système Tag Box papier, choix de la solution, architecture de l'application, résultats, difficultés rencontrées et bilan personnel." data-en="The internship report (27 pages) details the entire mission: Lear and Meknès plant context, analysis of the paper Tag Box system, choice of solution, application architecture, results, difficulties and personal evaluation.">Le rapport de stage (27 pages, en anglais) détaille l'ensemble de la mission : contexte de Lear et du site de Meknès, analyse du système Tag Box papier, choix de la solution, architecture de l'application, résultats, difficultés rencontrées et bilan personnel.</p>
+    <a href="../assets/pdf/rapport_de_stage_lear_anas_hadouche.pdf" target="_blank" rel="noopener" class="proj-gh-link" style="margin-top:20px; display:inline-flex">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:6px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM12 17l-4-4h2.5v-3h3v3H16l-4 4z"/></svg>
+      <span data-fr="Visualiser le rapport (PDF)" data-en="View report (PDF)">Visualiser le rapport (PDF)</span>
+    </a>
+
+    <hr class="proj-divider" style="margin-top:36px">
+
+    <div class="proj-section-label" style="margin-top:32px; margin-bottom:16px" data-fr="Remerciements" data-en="Acknowledgements">Remerciements</div>
+    <div class="proj-thanks">
+      <div class="proj-thanks-block">
+        <div class="proj-thanks-title" data-fr="Encadrement Lear" data-en="Lear supervision">Encadrement Lear</div>
+        <p class="proj-thanks-text" data-fr="Merci à Monsieur Tarik El Amine, Responsable Maintenance & Facilities du site, qui m'a confié le projet Digital Tag Box et m'a laissé beaucoup d'autonomie. Merci aussi à Monsieur Wahid Hafidi, qui m'a mis en contact avec l'entreprise." data-en="Thanks to Mr Tarik El Amine, Plant Maintenance & Facilities Responsible, who trusted me with the Digital Tag Box project and gave me a lot of autonomy. Thanks also to Mr Wahid Hafidi, who put me in contact with the company.">Merci à Monsieur Tarik El Amine, Responsable Maintenance & Facilities du site, qui m'a confié le projet Digital Tag Box et m'a laissé beaucoup d'autonomie. Merci aussi à Monsieur Wahid Hafidi, qui m'a mis en contact avec l'entreprise.</p>
+      </div>
+      <div class="proj-thanks-block">
+        <div class="proj-thanks-title" data-fr="Équipes de la zone de coupe" data-en="Cutting Area teams">Équipes de la zone de coupe</div>
+        <p class="proj-thanks-text" data-fr="Merci aux opérateurs, techniciens et chefs d'équipe de la zone de coupe, qui ont pris le temps de m'expliquer leur travail et de me faire leurs retours. Le projet n'aurait pas pu aller aussi loin sans eux." data-en="Thanks to the operators, technicians and team leaders of the Cutting Area, who took the time to explain their work and give me feedback. The project would not have gone this far without them.">Merci aux opérateurs, techniciens et chefs d'équipe de la zone de coupe, qui ont pris le temps de m'expliquer leur travail et de me faire leurs retours. Le projet n'aurait pas pu aller aussi loin sans eux.</p>
+      </div>
     </div>
   </section>
 
@@ -221,6 +252,35 @@
     document.documentElement.lang = lang;
   }
   setLang('fr');
+
+  // Visionneuse des captures (un onglet par rôle)
+  (function () {
+    const groups = [[{"src": "../assets/img/tagbox/tagbox_connexion.jpg", "fr": "Choix du profil parmi les 4 rôles", "en": "Profile selection among the 4 roles"}, {"src": "../assets/img/tagbox/tagbox_operateur_checklist.jpg", "fr": "Check-list maintenance 1er niveau", "en": "First-level maintenance checklist"}, {"src": "../assets/img/tagbox/tagbox_operateur_signalement.jpg", "fr": "Signalement d'une anomalie", "en": "Reporting an anomaly"}, {"src": "../assets/img/tagbox/tagbox_operateur_arret.jpg", "fr": "Déclaration d'un arrêt machine", "en": "Declaring a machine stop"}], [{"src": "../assets/img/tagbox/tagbox_technicien.jpg", "fr": "Signalements à prendre en charge", "en": "Reports to take over"}], [{"src": "../assets/img/tagbox/tagbox_chef_kpi.jpg", "fr": "KPI maintenance : MTTR, MTBF, disponibilité", "en": "Maintenance KPIs: MTTR, MTBF, availability"}, {"src": "../assets/img/tagbox/tagbox_chef_suivi_machines.jpg", "fr": "Suivi des machines par shift", "en": "Machine tracking per shift"}, {"src": "../assets/img/tagbox/tagbox_chef_analyse.jpg", "fr": "Analyse des interventions", "en": "Intervention analysis"}], [{"src": "../assets/img/tagbox/tagbox_admin_comptes.jpg", "fr": "Gestion des comptes", "en": "Account management"}, {"src": "../assets/img/tagbox/tagbox_admin_postes.jpg", "fr": "Gestion des postes et des check-lists", "en": "Workstation and checklist management"}]];
+    const box = document.querySelector('.tbv'); if (!box) return;
+    const main = box.querySelector('.tbv-main'), cap = box.querySelector('.tbv-caption'), thumbs = box.querySelector('.tbv-thumbs');
+    const prev = box.querySelector('.prev'), next = box.querySelector('.next');
+    let g = 0, i = 0;
+    function render() {
+      const it = groups[g][i];
+      main.src = it.src; main.alt = it[currentLang]; cap.textContent = it[currentLang];
+      thumbs.innerHTML = '';
+      groups[g].forEach((t, k) => {
+        const im = document.createElement('img'); im.src = t.src; im.alt = t[currentLang];
+        if (k === i) im.classList.add('active');
+        im.onclick = () => { i = k; render(); }; thumbs.appendChild(im);
+      });
+      thumbs.style.display = groups[g].length > 1 ? 'flex' : 'none';
+      prev.hidden = next.hidden = groups[g].length < 2;
+    }
+    box.querySelectorAll('.tbv-tab').forEach(b => b.onclick = () => {
+      box.querySelectorAll('.tbv-tab').forEach(x => x.classList.toggle('active', x === b));
+      g = +b.dataset.g; i = 0; render();
+    });
+    prev.onclick = () => { i = (i - 1 + groups[g].length) % groups[g].length; render(); };
+    next.onclick = () => { i = (i + 1) % groups[g].length; render(); };
+    document.querySelectorAll('.nav-lang button').forEach(b => b.addEventListener('click', () => setTimeout(render, 0)));
+    render();
+  })();
 
   document.querySelectorAll('.proj-gallery-img, .proj-gallery-img-web').forEach(img => {
     img.style.cursor = 'zoom-in';
