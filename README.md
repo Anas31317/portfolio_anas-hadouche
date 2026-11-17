@@ -18,3 +18,29 @@ Portfolio personnel d'Anas Hadouche, étudiant ingénieur en 4ᵉ année à l'IC
 ## Technologies
 
 Site statique en HTML, CSS et JavaScript, bilingue français / anglais, publié avec GitHub Pages.
+
+## Structure
+
+```
+portfolio_anas-hadouche/
+├── docs/                           ← dossier publié par GitHub Pages
+│   ├── index.html                  ← page d'accueil
+│   ├── experiences.html            ← liste des expériences
+│   ├── projects.html               ← liste des projets
+│   ├── projects/                   ← pages détaillées
+│   │   ├── tag-box.html            ← stage Lear Corporation
+│   │   ├── ocp.html                ← stage OCP Group
+│   │   ├── norauto.html            ← stage Norauto
+│   │   ├── bateau.html             ← Bateau autonome
+│   │   └── suivi-muscu.html        ← Suivi Muscu
+│   └── assets/
+│       ├── style.css               ← styles communs à toutes les pages
+│       ├── project.css             ← styles des pages détaillées
+│       ├── viewer.js               ← visionneuse de captures d'écran
+│       ├── img/                    ← photo, images des projets (bateau, muscu, tagbox)
+│       ├── pdf/                    ← CV, rapports de stage, certificat TOEIC
+│       └── videos/                 ← vidéo de démonstration du bateau
+├── tools/
+│   └── cartes.py                   ← génère les cartes des pages Expériences et Projets
+└── README.md
+```
