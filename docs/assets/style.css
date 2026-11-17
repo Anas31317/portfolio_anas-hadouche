@@ -590,3 +590,4 @@ footer {
   .p-facts div, .p-contact li { grid-template-columns: 1fr; gap: 2px; }
   .p-grid.two .img { height: 210px; }
 }
+.p-sec { scroll-margin-top: 72px; }
