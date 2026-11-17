@@ -16,8 +16,8 @@
   <a href="index.html" class="nav-logo">ANAS HADOUCHE<em>.</em></a>
   <ul class="nav-links">
     <li><a href="#about"    data-fr="À propos"     data-en="About">À propos</a></li>
-    <li><a href="#experiences" data-fr="Expériences" data-en="Experience">Expériences</a></li>
-    <li><a href="#projets" data-fr="Projets"  data-en="Projects">Projets</a></li>
+    <li><a href="experiences.html" data-fr="Expériences" data-en="Experience">Expériences</a></li>
+    <li><a href="projects.html" data-fr="Projets"  data-en="Projects">Projets</a></li>
     <li><a href="#skills"   data-fr="Compétences"  data-en="Skills">Compétences</a></li>
     <li><a href="#parcours" data-fr="Parcours"      data-en="Background">Parcours</a></li>
   </ul>
@@ -217,6 +217,9 @@
     document.documentElement.lang = lang;
   }
   setLang('fr');
+  // À l'ouverture sans ancre (#...), toujours afficher le haut de la page
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  if (!location.hash) window.scrollTo(0, 0);
 </script>
 
 </body>
