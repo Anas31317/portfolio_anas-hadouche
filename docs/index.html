@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio d'Anas Hadouche — Étudiant ingénieur ICAM Toulouse, spécialisé en systèmes industriels, électronique embarquée et développement web.">
   <title>Anas Hadouche — Portfolio</title>
-  <link rel="stylesheet" href="assets/style.css?v=202611180928">
-  <script src="assets/theme.js?v=202611180928"></script>
+  <link rel="stylesheet" href="assets/style.css?v=202611180932">
+  <script src="assets/theme.js?v=202611180932"></script>
 </head>
 <body>
 
@@ -193,8 +193,7 @@
           <li data-fr="Région toulousaine" data-en="Toulouse area">Région toulousaine</li>
         </ul>
         <div class="p-btns">
-          <a class="p-btn main" href="mailto:anas.hadouche@2029.icam.fr" data-fr="M'écrire" data-en="Email me">M'écrire</a>
-          <a class="p-btn sec" href="assets/pdf/cv_anas_hadouche.pdf" download data-fr="Télécharger le CV" data-en="Download CV">Télécharger le CV</a>
+          <a class="p-btn main" href="assets/pdf/cv_anas_hadouche.pdf" download data-fr="Télécharger le CV" data-en="Download CV">Télécharger le CV</a>
         </div>
       </div>
       <div class="pc-grid">
@@ -242,15 +241,5 @@
   if (!location.hash) window.scrollTo(0, 0);
 </script>
 
-<script>
-  // copie l'email ; le bouton dit « Copié » deux secondes
-  function copyMail(btn) {
-    navigator.clipboard.writeText('anas.hadouche@2029.icam.fr').then(function () {
-      var en = document.documentElement.lang === 'en';
-      btn.textContent = en ? 'Copied' : 'Copié'; btn.classList.add('ok');
-      setTimeout(function () { btn.textContent = btn.getAttribute(en ? 'data-en' : 'data-fr'); btn.classList.remove('ok'); }, 2000);
-    });
-  }
-</script>
 </body>
 </html>

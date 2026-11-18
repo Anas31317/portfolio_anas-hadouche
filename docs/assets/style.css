@@ -758,3 +758,31 @@ body { background: radial-gradient(1100px 620px at 85% -8%, var(--glow), transpa
   .pc-link b { font-size: 14px; overflow-wrap: normal; }
   .pc-copy { position: static; transform: none; margin: 0 12px 12px 64px; }
 }
+
+/* ── PANNEAU CONTACT (latéral) ── */
+.contact-drawer {
+  position: fixed; inset: 0 0 0 auto; margin: 0; height: 100dvh; max-height: none;
+  width: min(440px, 100%); padding: 28px 28px 32px; border: 0; border-left: 1px solid var(--border);
+  background: radial-gradient(500px 260px at 100% 0%, var(--glow), transparent 70%), var(--surface);
+  color: var(--text); overflow-y: auto; box-shadow: -20px 0 60px rgba(0,0,0,0.25);
+}
+.contact-drawer[open] { animation: cd-in .3s ease-out; }
+.contact-drawer.closing { animation: cd-out .22s ease-in forwards; }
+.contact-drawer::backdrop { background: rgba(8,14,22,0.45); backdrop-filter: blur(3px); animation: cd-fade .3s ease-out; }
+.contact-drawer.closing::backdrop { opacity: 0; transition: opacity .22s; }
+@keyframes cd-in { from { transform: translateX(100%); } to { transform: none; } }
+@keyframes cd-out { to { transform: translateX(100%); } }
+@keyframes cd-fade { from { opacity: 0; } }
+.cd-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.cd-head h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 40px; letter-spacing: 1px; text-transform: uppercase; }
+.cd-head h2::after { content: ""; display: block; width: 48px; height: 4px; border-radius: 2px; margin-top: 8px; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+.cd-close {
+  width: 44px; height: 44px; display: grid; place-items: center; border-radius: 10px; cursor: pointer;
+  background: none; border: 1px solid var(--border); color: var(--text-2); transition: color .2s, border-color .2s, transform .2s;
+}
+.cd-close:hover { color: var(--accent); border-color: var(--accent-m); transform: rotate(90deg); }
+.cd-close:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cd-lead { color: var(--text-2); font-size: 15px; line-height: 1.6; }
+.contact-drawer .pc-tags { margin: 16px 0 22px; }
+.contact-drawer .pc-copy { position: static; transform: none; margin: 0 12px 12px 74px; }
+.cd-cv { display: inline-block; margin-top: 22px; }
