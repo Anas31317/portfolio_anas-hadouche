@@ -707,3 +707,9 @@ body { background: radial-gradient(1100px 620px at 85% -8%, var(--glow), transpa
   *, *::before, *::after { transition: none !important; animation: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* langues : une par ligne */
+.p-langs > span { display: block; }
+.p-langs > span + span { margin-top: 4px; }
+.p-langs .in { display: inline; }
+.p-langs a { white-space: nowrap; }
