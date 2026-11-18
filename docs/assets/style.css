@@ -656,8 +656,7 @@ body { background: radial-gradient(1100px 620px at 85% -8%, var(--glow), transpa
   background: var(--name-grad);
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
-.nav-logo em, .p-search h4::before { color: var(--accent-2); }
-.p-search h4::before { content: "● "; font-size: 11px; vertical-align: 2px; }
+.nav-logo em { color: var(--accent-2); }
 
 /* titres de section : petit trait bleu → ambre */
 .p-sec h2::after {
